@@ -1,0 +1,22 @@
+.navbar-brand{
+    width: 5rem !important;
+    height: 3.9rem !important;
+    object-fit: contain;
+}
+.cart{
+    margin-left: auto;
+
+}
+
+.fas{
+    color:#ffb703;
+    transition: all 0.5s ease-in-out;
+}
+.fas:hover{
+    color:#90e0ef;
+}
+.navbar{
+    position:sticky;
+    top:0;
+    z-index: 1;
+}

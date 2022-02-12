@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { Route,Routes} from 'react-router-dom';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Default from './components/Default';
+import NavBar from './components/navBar';
+import ProductDetail from './components/productDetail';
+import ProductList from './components/productList';
+import InCart from './components/Cart/inCart';
+//import Model from './components/Model';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <NavBar/>
+        <Routes>
+         <Route exact path='/' element={<ProductList />} />
+         <Route path='/productDetail' element={<ProductDetail />} />
+         <Route path='/inCart' element={<InCart />} />
+         <Route path="*" element={Default}  status={404}/>
+       </Routes>
+      </div>
+    );
+  }
 }
 
-export default App;
