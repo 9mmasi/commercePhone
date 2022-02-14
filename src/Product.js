@@ -9,8 +9,8 @@ export default class Product extends Component {
         const{id,Productname,price,img,inCart}=this.props.product;
         
         return (
-            <ProductWrapper className=' d-flex justify-content-center align-items-center product col-lg-3 col-md-6 col-9 my-3'>
-                    <div className='card ' >
+            <ProductWrapper className=' d-flex justify-content-center align-items-center product col-lg-3 col-md-6 col-9  my-3'>
+                    <div className='card mx-auto' >
            <ProductConsumer>
                {value=> {return( 
                

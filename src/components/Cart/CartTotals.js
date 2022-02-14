@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { ProductConsumer } from '../../context';
+import PayPalButton from './PayPalButton'
 
 export default class CartTotals extends Component {
   render() {
@@ -35,7 +36,9 @@ export default class CartTotals extends Component {
                                    
                                     
                                 </div>
+                                <PayPalButton total={cartTotal} history={this.history} clear_cart={clear_cart}/>
                             </div>
+                           
                         </div>
                     </React.Fragment>
                 )

@@ -20,7 +20,7 @@ export default class App extends Component {
          <Route exact path='/' element={<ProductList />} />
          <Route path='/productDetail' element={<ProductDetail />} />
          <Route path='/inCart' element={<InCart />} />
-         <Route path="*" element={Default}  status={404}/>
+         <Route path="*" element={Default } />
        </Routes>
       </div>
     );

@@ -20,7 +20,7 @@ export default class InCart extends Component {
                                         <Title name='Your' title='Cart' />
                                         <CartColumn/>
                                         <CartList />
-                                        <CartTotals />
+                                        <CartTotals history={this.props.history}/>
                                     </React.Fragment>
                                     
 
